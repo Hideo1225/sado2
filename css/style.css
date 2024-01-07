@@ -1,0 +1,72 @@
+.title{
+  font-size: 60px;
+  writing-mode: vertical-rl; /* 縦書き */
+  line-height: 150%;         /* 行間を広げる */
+}
+.topPageTtl{
+  position: absolute; /* 7行目~10行目はセット。上から40%、左から50%の位置に配置 */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;      /* 1Pのタイトルの縦幅 */
+}
+.topPageTtl .rightAlign{
+  text-align: right;  /* 右寄せ（縦書きになっているので下寄せになる） */
+  display: block;     /* text-alignを使用するにはblock要素に変更する必要があるため、block要素を指定 */
+}
+.topPageTtl .centerAlign{
+  text-align: center;  /* 中央寄せ */
+  display: block;      /* text-alignを使用するにはblock要素に変更する必要があるため、block要素を指定 */
+}
+.page02Ttl{
+  width: 250px;        /* 2Pのタイトルの横幅 */
+  margin-left: 50px;   /* 左側に50pxの空白 */
+}
+.page03Ttl{
+  border: 1px solid #000; /* 3P目掛け軸の外側の枠線 */
+  margin-left: 100px;       /* 左側に50pxの空白 */
+}
+.page03Ttl .title{
+  border: 1px solid #000; /* 3P目掛け軸の内側の枠線 */
+  margin: 20px;             /* 枠線の隙間を20px */
+}
+.page02flex,.page03flex{
+  display: flex;            /* 要素を横並びにする */
+  align-items:center;       /* 要素の縦を中央寄せ */
+  position: absolute;       /* 28行目~31行目はセット。上から40%、左から50%の位置に配置 */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider,.flour{
+  width: 300px;            /* 2P,3Pの画像の横幅 */
+}
+.slider img{
+  height: 200px;           /* 2Pの画像の縦幅 */
+}
+.page04flex{
+  display: flex;           /* 横並びにする */
+  position: absolute;      /* 41行目~44行目はセット。上から15%、左から50%の位置に配置 */
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical{
+  font-size: 20px;
+  writing-mode: vertical-rl;   /* 縦書き */
+  line-height: 150%;           /* 行間を広げる */
+  text-align: right;           /* 右寄せ（縦書きになっているので下寄せになる） */
+}
+.btn{
+  color: #fff;               /* ボタンの文字色 */
+  background-color: #006400; /* ボタンの背景色 */
+  position: absolute;          /* 55行目~58行目はセット。上から80%、左から50%の位置に配置 */
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 60px;          /* 背景色の範囲を広げる */
+  border-radius: 10px;         /* 角を少し丸くする */
+}
+.btn:hover{
+  opacity: 0.7;                /* ボタンがホバーした際に色を少し薄くする */
+}
